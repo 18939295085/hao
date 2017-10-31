@@ -1,0 +1,927 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fl {
+    float: left;
+}
+
+.rl {
+    float: right;
+}
+
+#content {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#menu {
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    z-index: 999;
+    display: none;
+    background: #ECECEC;
+}
+
+#menu a {
+    color: #333;
+    font-size: 18px;
+}
+
+#menu .active a {
+    color: #ED6C00;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#menu > li {
+    margin-left: 25%;
+    font-size: 18px;
+    font-weight: 900;
+    color: #0A0A0A;
+}
+
+#menu li ul {
+    display: none;
+}
+
+#menu li .active {
+    display: block;
+}
+
+#menu li ul .active {
+    font-weight: 900;
+    color: #000;
+}
+
+#menu li ul li {
+    color: #9F9F9F;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10%;
+}
+
+.con-mar {
+    margin-top: 30%;
+}
+
+.logo {
+    margin-top: 30%;
+}
+
+#dookbook > div {
+    float: right;
+    width: 75%;
+}
+
+.section {
+    height: 100%;
+    font-family: "Microsoft Yahei";
+    clear: both;
+}
+
+/*fullpage*/
+/*第一屏*/
+.container-banner {
+    width: 100%;
+    height: 100%;
+}
+
+.banners {
+    /*padding-top: 13%;*/
+}
+
+/*第二屏*/
+.book {
+    background: #F4F4F4;
+    position: relative;
+    clear: both;
+    height: 100%;
+}
+
+/*分类书籍*/
+
+/*图书详情*/
+.phy-con {
+    display: none;
+    position: absolute;
+    background: #F4F4F4;
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.phy-show {
+    width: 90%;
+}
+
+/*详情新加的*/
+
+.show-title {
+    margin-bottom: 20px;
+}
+
+.show-right {
+    width: 65%;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.show-right-h h2 {
+    margin-bottom: 35px;
+    font-size: 25px;
+}
+
+.show-right-h h3 {
+    color: #B3B3B3;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.show-cont {
+    width: 80%;
+    border: 1px solid #E9E9E9;
+    padding: 20px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.show-cont p:last-child {
+    text-align: right;
+}
+
+.show-lis {
+    color: #848484;
+    margin-top: 30px;
+}
+
+.show-lis ul li {
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.show-lis ul li:before {
+    content: "•";
+    color: #848484;
+}
+
+.show-lis ul p {
+    margin-top: 30px;
+}
+
+.show-lis h2 {
+    font-weight: normal;
+    margin-top: 40px;
+    font-size: 35px;
+    font-style: oblique;
+}
+
+/*结束*/
+
+.show-title img {
+    width: 6%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.show-left {
+    width: 13%;
+    height: 100%;
+}
+
+.show-left img {
+    width: 100%;
+}
+
+/*外国文学*/
+
+.book .active {
+    display: block;
+}
+
+.phy-waiguo {
+    width: 90%;
+    padding-top: 50px;
+    margin: auto;
+    overflow: hidden;
+    display: none;
+}
+
+.phy-waiguo ul {
+    width: 100%;
+}
+
+.phy-waiguo ul li {
+    margin-left: 40px;
+    float: left;
+    width: 20%;
+}
+
+.phy-waiguo ul li p:last-child {
+    font-size: 14px;
+    color: #9A9A9A;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.phy-waiguo ul li img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.book > ul {
+    width: 100%;
+    height: 20%;
+    margin-top: 8%;
+}
+
+.book-bg {
+    background: url("../image/gezis.png") repeat-y;
+    background-position: center center;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.book > ul > li img {
+    width: 100%;
+}
+
+/*第三屏*/
+.author {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/*作家详情*/
+.author-show {
+    width: 95%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    display: none;
+}
+
+.author-cont {
+    margin-left: 40px;
+}
+
+/*新加的作家详情*/
+.author-title {
+    margin-bottom: 30px;
+}
+
+.author-right {
+    width: 60%;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.author-left {
+    width: 15%;
+    margin-left: 8px;
+    height: 100%;
+}
+
+.author-right-conts {
+    line-height: 30px;
+    font-size: 14px;
+    color: #020202;
+}
+
+.author-right-conts h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.author-right-conts h5 {
+    font-size: 16px;
+}
+
+.author-right-conts h5 > span {
+    font-weight: normal;
+    color: #636363;
+}
+
+.author-right-conts h6 {
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.author-right-conts hr {
+    border: 1px solid #EFEFEF;
+    margin-bottom: 20px;
+}
+
+/*结束*/
+.author-title > img {
+    width: 6%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.author-left img {
+    width: 100%;
+}
+
+.conts-bottom p {
+    width: 20%;
+    float: left;
+    margin-left: 20px;
+}
+
+.conts-bottom p img {
+    width: 100%;
+}
+
+/*时代作家*/
+.author ul {
+    width: 95%;
+    padding-top: 30px;
+    margin: auto;
+    overflow: auto;
+}
+
+.author ul li {
+    float: left;
+    width: 21%;
+    margin-left: 35px;
+    margin-bottom: 35px;
+}
+
+.author ul li img {
+    width: 100%;
+    cursor: pointer;
+}
+
+/*第四屏*/
+.super {
+    height: 100%;
+    background: #F4F4F4;
+    position: relative;
+}
+
+/*IP详情*/
+.super-show {
+    width: 95%;
+    height: 100%;
+    display: none;
+    background: #f4f4f4;
+    position: absolute;
+    margin-left: 30px;
+}
+
+.sups-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.sups-title img {
+    margin-bottom: 20px;
+    width: 6%;
+    cursor: pointer;
+}
+
+.supsc-left {
+    width: 10%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.supsc-left img {
+    width: 100%;
+}
+
+.supsc-right {
+    width: 50%;
+    margin-left: 40px;
+    height: 100%;
+}
+
+.supsc-right > h3 {
+    font-size: 20px;
+}
+
+.supsc-right > p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.supsc-right > h5 {
+    font-size: 15px;
+}
+
+.supsc-right > hr {
+    border: 1px solid #E8E8E7;
+}
+
+.supsc-bottom {
+    width: 100%;
+    height: 30%;
+    margin-top: 40px;
+    overflow: auto;
+}
+
+.supes-left {
+    width: 20%;
+    margin-left: 10px;
+}
+
+.supes-left img {
+    width: 100%;
+}
+
+.supes-right {
+    width: 60%;
+    margin-left: 30px;
+
+}
+
+.supes-right h5 {
+    color: #000;
+    text-align: right;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.supes-right h5 img {
+    width: 15%;
+}
+
+.supes-right p {
+    font-size: 14px;
+    color: #B9B9B9;
+}
+
+.supes-right p:nth-child(2) {
+    text-align: right;
+}
+
+/*超级IP*/
+.super-mar {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    font-size: 16px;
+    color: #1A1A1A;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sup-left {
+    width: 50%;
+    margin-top: 40px;
+}
+
+.sup-left p > img {
+    width: 80%;
+    cursor: pointer;
+}
+
+.sup-left h4 {
+    margin-bottom: 15px;
+}
+
+.sup-right {
+    width: 50%;
+}
+
+.sup-right p > img {
+    width: 80%;
+    cursor: pointer;
+}
+
+.sup-right h4 {
+    margin-bottom: 15px;
+}
+
+/*第五屏*/
+.news {
+    height: 100%;
+}
+
+/*新闻中心*/
+.news-cont {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    margin-top: 60px;
+}
+
+.news-left {
+    width: 47%;
+}
+
+.news-title h3 {
+    font-size: 35px;
+    color: #777777;
+    margin-bottom: 20px;
+}
+
+.news-title ul li:hover {
+    font-weight: 900;
+    color: #5F5F5F;
+    cursor: pointer;
+}
+
+.news-title ul li:before {
+    content: "•";
+    color: #A3A3A3;
+}
+
+.news-title ul li {
+    color: #a3a3a3;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.news-midline {
+    border-right: 1px solid #F2F2F2;
+    height: 90%;
+}
+
+.news-right {
+    width: 47%;
+}
+
+.news-right h5 {
+    font-weight: normal;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.news-right hr {
+    border: 1px solid #CACACA;
+    margin-bottom: 10px;
+}
+
+.news-right p {
+    font-size: 14px;
+    color: #BDBDBD;
+    margin-bottom: 5px;
+}
+
+.news-cont-font {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.news-cont-font img {
+    text-indent: 2rem;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+/*第六屏*/
+/*关于读客*/
+.brief {
+    height: 100%;
+}
+
+/*简介下的内容*/
+.brief-content {
+    width: 90%;
+    height: 50%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.brief-title h2 {
+    color: #767676;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.brief-cont h3 {
+    font-size: 25px;
+    margin-bottom: 35px;
+}
+
+.brief-cont p {
+    color: #616161;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.brief-bg {
+    width: 100%;
+    height: 50%;
+    background: url("../image/dookbook.png") no-repeat;
+    background-size: 100%;
+    background-position: center bottom;
+}
+
+/*第七屏*/
+.adds {
+    height: 100%;
+}
+
+/*加入读客*/
+.adds-container {
+    height: 80%;
+    padding-top: 50px;
+}
+
+.adds-content {
+    width: 90%;
+    margin: auto;
+}
+
+.adds-title h3 {
+    color: #767676;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.adds-title ul {
+    overflow: auto;
+}
+
+.adds-title ul li {
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 18%;
+    height: 18%;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+.adds-title ul li:hover {
+    /*border: 1px solid #ED6C00;*/
+}
+
+.adds-title .active {
+    display: block;
+}
+
+.adds-title hr {
+    border: 1px solid #F6F6F6;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.adds-bottom {
+    display: none;
+}
+
+.adds-bottom h5 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #585657;
+    font-size: 18px;
+}
+
+.adds-bottom p {
+    font-size: 16px;
+    line-height: 25px;
+    color: #757575;
+}
+
+/*底部介绍*/
+.asd {
+    width: 100%;
+    height: 20%;
+    background: #EC6C00;
+    padding-top: 15px;
+}
+
+.bookbottom {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.book-content .book-title {
+    width: 70%;
+    margin: auto;
+    font-size: 18px;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.book-content .book-title li {
+    float: left;
+}
+
+.book-content .book-title li:first-child {
+    margin-left: 30px;
+}
+
+.book-content .book-title li a {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 900;
+    color: #000;
+}
+
+.bookbottom .book-content p {
+    font-size: 14px;
+}
+
+/*媒体查询*/
+@media (max-width: 1599px) and (min-width: 1280px) {
+    #menu a {
+        font-size: 17px;
+    }
+
+    #menu .active a {
+        font-size: 35px;
+    }
+
+    .show-title img {
+        margin: 0;
+    }
+
+    .show-lis ul li {
+        font-size: 13px;
+    }
+
+    .show-right-h h3 {
+        font-size: 14px;
+    }
+
+    .show-lis h2 {
+        font-size: 30px;
+    }
+
+    .show-right-h h2 {
+        margin-bottom: 15px;
+    }
+
+    .book .phy-waiguo ul li {
+        margin-left: 35px;
+    }
+
+    .phy-waiguo ul li p:last-child {
+        font-size: 12px;
+    }
+
+    .author ul li {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .author-title {
+        margin-bottom: 15px;
+    }
+
+    .author-title > img {
+        margin-top: 5px;
+    }
+
+    .author-right-conts h3 {
+        font-size: 18px;
+    }
+
+    .author-right-conts h5 {
+        font-size: 14px;
+    }
+
+    .author-right-conts h6 {
+        font-size: 15px;
+    }
+
+    .sups-title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .supsc-bottom {
+        margin-top: 20px;
+    }
+
+    .supsc-right {
+        width: 60%;
+    }
+
+    .news-cont {
+        margin-top: 25px;
+    }
+
+    .news-title h3 {
+        font-size: 30px;
+    }
+
+    .news-title ul li {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .news-right h5 {
+        font-size: 20px;
+    }
+
+    .news-right p {
+        font-size: 12px;
+    }
+
+    .news-cont-font {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .book-content .book-title {
+        width: 82%;
+    }
+
+    .brief-title h2 {
+        font-size: 30px;
+    }
+
+    .brief-cont h3 {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .brief-cont p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .adds-title h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .adds-bottom p {
+        font-size: 14px;
+    }
+
+    .adds-container {
+        height: 77%;
+    }
+
+    .asd {
+        height: 23%;
+    }
+
+    .con-mar {
+        margin-top: 20%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
