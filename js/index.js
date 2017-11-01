@@ -14,12 +14,12 @@ $(function () {
     $('#dookbook').fullpage({
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
         scrollingSpeed: 1000,
-        // keyboardScrolling: false,
-        // scrollBar: true,
+        keyboardScrolling: false,
         menu: '#menu',
         onLeave: function (index, nextIndex, direction) {
-//                console.log(nextIndex + "=----" + direction)
-
+               // console.log(nextIndex + "=----" + direction)
+            $('#menu li a').parent('li').siblings().find('ul').hide();
+            $('#menu li a').eq(nextIndex-1).next('ul').show();
             if (nextIndex > 1) {
                 if (nextIndex == 2 && direction == 'down') {
                     setTimeout(function () {
@@ -51,23 +51,29 @@ $(function () {
     });
     /*图书详情*/
     $('.phy-waiguo img').on('click', function () {
+        $.fn.fullpage.setAllowScrolling(false);
         $('.phy-con').show();
     });
     $('.show-title').on('click', function () {
+        $.fn.fullpage.setAllowScrolling(true);
         $('.phy-con').hide();
     });
     /*IP详情*/
     $('.ip-aj').on('click', function () {
+        $.fn.fullpage.setAllowScrolling(false);
         $('.super-show').show();
     });
     $('.sups-title').on('click', function () {
+        $.fn.fullpage.setAllowScrolling(true);
         $('.super-show').hide()
     });
     /*作家详情*/
     $('.author ul li img').on('click', function () {
+        $.fn.fullpage.setAllowScrolling(false);
         $('.author-show').show();
     });
     $('.author-title').on('click', function () {
+        $.fn.fullpage.setAllowScrolling(true);
         $('.author-show').hide();
     });
     /*招聘详情*/
